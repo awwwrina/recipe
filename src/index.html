@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+	<title>Recipe</title>
+</head>
+<body>
+	<div class="container">
+		<div class="information">
+			<form action="" class="about_patient">
+				<fieldset>
+					<legend>
+						Данные пациента:
+					</legend>
+					<input type="text" placeholder="Фамилия">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Отчество">
+					<input required type="date" min="1921-01-01" max="2021-12-31">
+					<input type="reset">
+				</fieldset>
+			</form>
+			<form action="" class="about_doctor">
+				<fieldset>
+					<legend>
+						Данные врача:
+					</legend>
+					<input type="text" placeholder="Фамилия">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Отчество">
+					<input type="reset">
+				</fieldset>
+			</form>
+			<form action="" class="about_drug">
+				<fieldset>
+					<legend>
+						Данные о лекарственном средстве:
+					</legend>
+					<input type="text" placeholder="МНН">
+					<select name="list">
+						<option>Лекарственная форма(ЛФ)</option>
+						<option>Таблетки</option>
+						<option>Капсулы</option>
+					</select>
+					<input type="number" placeholder="Дозировка в мг">
+					<input type="number" placeholder="Количество единиц ЛФ на 1 прием">
+					<select name="list">
+						<option>Кратность приема</option>
+						<option>1 раз в день</option>
+						<option>2 раза в день</option>
+						<option>3 раза в день</option>
+					</select>
+					<input type="number" placeholder="Количество месяцев приема">
+					<input class="textarea" type="textarea" placeholder="Сигнатура">
+					<input type="reset">
+				</fieldset>
+			</form>
+		</div>
+		
+		<div class="recipe">
+			<div class="header">
+				<div class="header__stamp">
+					Министерство здравоохранения
+					Российской Федерации 
+					<br><br>
+					Наименование (штамп) <br>
+					медицинской организации
+					<br><br>
+					Наименование (штамп) <br>
+					индивидуального предпринимателя 
+					(указать адрес, номер и дату лицензии,
+					наименование органа государственной
+					власти, выдавшего лицензию)
+				</div>
+				<div class="header__form">
+					Код формы по ОКУД <br>
+					Код учреждения по ОКПО <br>
+					Медицинская документация <br>
+					Форма N 107-1/у <br>
+					Утверждена приказом <br>
+					Министерства здравоохранения <br>
+					Российской Федерации <br>
+					от 14 января 2019 г. N 4н
+				</div>
+				<div class="divider"></div>
+			</div>
+			<div class="body">
+				<div class="row_first">
+					<h2 class="body__title">
+						РЕЦЕПТ
+					</h2> 
+					<div class="body__subtitle">
+						<div class="adult">(взрослый,&nbsp;</div>
+						<div class="child">детский</div>
+						<div>
+							&nbsp;- нужное подчеркнуть)
+						</div>
+					</div>
+					
+				</div>
+				<div class="row_second">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
